@@ -1,11 +1,10 @@
 #include <stdio.h>
 
 /**
- * Program to test the working of Puts command
- *
- * Comment for return value
- */
-
+  * main - Entry point
+  *
+  * Return: Always 0 (Success)
+  */
 int main(void)
 {
 
