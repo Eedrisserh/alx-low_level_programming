@@ -1,5 +1,5 @@
 #include <stdio.h>
-/**
+/*
  * Program to test the working of Puts command
  */
 int main(void)
