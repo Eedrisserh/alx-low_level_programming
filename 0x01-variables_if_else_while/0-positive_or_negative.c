@@ -3,7 +3,8 @@
 #include <stdio.h>
 /** more headers goes there */
 
-/** main - Entry point
+/**
+  *  main - Entry point
   *
   * Return: Always 0 (Success) 
   */
@@ -24,7 +25,6 @@ int main(void)
 	{
 		printf("is zero\n");
 	}
-	
 		else if (n < 0)
 	{
 			printf("is negative\n");
