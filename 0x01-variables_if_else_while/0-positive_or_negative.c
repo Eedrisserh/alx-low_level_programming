@@ -28,5 +28,5 @@ int main(void)
 	{
 			printf("is negative\n");
 	}
-	return (0);
-}
+	return (0)
+
