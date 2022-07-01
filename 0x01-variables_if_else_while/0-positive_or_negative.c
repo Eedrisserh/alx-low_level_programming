@@ -23,6 +23,7 @@ int main(void)
 	else if (n == 0)
 	{
 		printf("is zero\n");
+	}
 	
 		else if (n < 0)
 	{
