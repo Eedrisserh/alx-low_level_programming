@@ -1,0 +1,16 @@
+#include <stdlib.h>
+#include <time.h>
+#include <stdio.h>
+#include <unistd.h>
+/**
+  *  main - Entry point
+  *
+  * Return: Always 0 (Success)
+  */
+	int main(void)
+{
+	fprintf(stderr, "and that piece of art is useful\" - Dora Korpar, 2015-10-19");
+	putchar(10); /* this is an ascii code for new line*/
+	
+	return (0);
+}
