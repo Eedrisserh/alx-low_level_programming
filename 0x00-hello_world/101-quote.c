@@ -12,7 +12,5 @@
 	fprintf(stderr, "and that piece of art is useful\"");
 	fprintf(stderr, " - Dora Korpar, 2015-10-19");
 	
-	putchar(10);
-
 	return (0);
 }
