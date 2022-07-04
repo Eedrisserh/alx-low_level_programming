@@ -18,7 +18,6 @@
 
 	putchar(c);
 	putchar(d);
-	if (c != 57 && d !=57)
 {
 	putchar(44);
 	putchar(32);
