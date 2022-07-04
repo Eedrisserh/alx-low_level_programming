@@ -1,29 +1,38 @@
-#include <unistd.h>
 #include <stdio.h>
-#include <stdlib.h>
 
 /**
- *main -> Alphabet printing
- *Non empty comment line
- *Return: Always 0 (Success)
- */
-	int main(void)
+ * main - Writes combinations of 00-99
+ * @void: Empty parameter list for main.
+ *
+ * Description: Writes all unique combinations of 2
+ * digit numbers
+ *
+ * Return: 0 for success
+*/
+int main(void)
 {
-	int c;
-	int d;
+	int i, j;
 
-	for (c = 48; c <= 57; c++)
-	for (d = 48; d <= 57; d++)
-{
+	for (i = 0; i <= 99; i++)
+	{
+		for (j = 0; j <= 99; j++)
+		{
+			if (i < j)
+			{
+				putchar((i / 10) + '0');
+				putchar((i % 10) + '0');
+				putchar(' ');
+				putchar((j / 10) + '0');
+				putchar((j % 10) + '0');
 
-	putchar(c);
-	putchar(d);
-{
-	putchar(44);
-	putchar(32);
-}
-
-}
-	putchar(10); /* this is an ascii code for new line*/
+				if (i != 98 || j != 99)
+				{
+					putchar(',');
+					putchar(' ');
+				}
+			}
+		}
+	}
+	putchar('\n');
 	return (0);
 }
