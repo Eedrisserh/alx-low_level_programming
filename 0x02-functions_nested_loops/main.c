@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-	_putchar();
+	print_alphabetsx10();
 	return (0);
 }
 
