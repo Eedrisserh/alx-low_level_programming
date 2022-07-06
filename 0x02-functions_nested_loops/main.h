@@ -7,5 +7,6 @@ void print_alphabetx10(void);
 int _isalpha(int c);
 int print_sign(int n);
 int _abs(int c);
+int print_last_digit(int n);
 
 #endif
