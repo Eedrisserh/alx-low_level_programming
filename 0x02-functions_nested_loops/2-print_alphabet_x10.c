@@ -4,13 +4,15 @@
  *
  * Return: 0
  */
-void print_alphabetx10(void)
-{
-	char c, i;
+void print_alphabet_x10(void)
+{ 
+	int i;
 
 	for (i = 0; i <= 9; i++)
 	{
-		for (c = 'a'; c <= 'z'; c++)
+		char c;
+
+		for (c ='a'; c <='z'; c++)
 		{
 			_putchar(c);
 		}
