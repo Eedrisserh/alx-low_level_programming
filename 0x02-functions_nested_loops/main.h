@@ -6,5 +6,6 @@ void print_alphabet(void);
 void print_alphabetx10(void);
 int _isalpha(int c);
 int print_sign(int n);
+int _abs(int c);
 
 #endif
