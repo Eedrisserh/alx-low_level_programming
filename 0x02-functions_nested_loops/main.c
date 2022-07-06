@@ -8,6 +8,7 @@
 int main(void)
 {
 	int _islower(int c);
+	int _isalpha(int c);
 	return (0);
 }
 
