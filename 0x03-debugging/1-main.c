@@ -13,7 +13,7 @@ int main(void)
 	printf("Infinite loop incoming :(\n");
 	printf("Infinite loop avoided! \\o/\n");
 
-	i = 0;
+/*	i = 0; */
 
 /*	while(i < 10) */
 /*	{	*/
