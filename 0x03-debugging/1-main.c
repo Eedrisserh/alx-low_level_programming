@@ -14,12 +14,12 @@ int main(void)
 	printf("Infinite loop incoming :(\n");
 
 	i = 0;
-/**
-* main - loop	while(i < 10)
-*	{
-*		putchar(i);
-*	}
-*/
+
+/*	while(i < 10) */
+	{
+		putchar(i);
+	}
+
 
 	return (0);
 }
