@@ -7,5 +7,5 @@
  */
 int_strlen(char *s)
 {
-	strlen(*s)
+	strlen(*s);
 }
