@@ -5,7 +5,7 @@
  * @s: is the varaible that stores the character
  * return nothing
  */
-int_strlen(char *s)
+int _strlen(char *s)
 {
 	strlen(*s);
 }
