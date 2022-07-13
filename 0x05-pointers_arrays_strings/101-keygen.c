@@ -1,13 +1,19 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+
 /**
- * main - generates keygen.
- * Return: 0 Always.
+ * main -  generates random passwords for 101-crackme
+ * @c: variable
+ * Return: Always return a result
  */
+
 int main(void)
 {
-	int r = 0, c = 0;
+	int r = 0;
+
+	c = 0;
+
 	time_t t;
 
 	srand((unsigned int) time(&t));
@@ -15,10 +21,10 @@ int main(void)
 	{
 		r = rand() % 128;
 		if ((c + r) > 2772)
-			break;
+		break;
 		c = c + r;
 		printf("%c", r);
 	}
-	printf("%c\n", (2772 - c));
+	printf("%\n", (2772 - c));
 	return (0);
 }
