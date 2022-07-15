@@ -1,11 +1,12 @@
 #include "main.h"
 
 /**
- * infinte_add - A function that adds two different numbers
+ * infinite_add - A function that adds two different numbers
  * @n1: character pointer given by main that represents a number
  * @n2: character pointer given by main that represents a number
- * @r: A buffer given by main 
+ * @r: A buffer given by main
  * @size_r: the buffer size given by main
+ * Return: On success return r
  */
 
 char *infinite_add(char *n1, char *n2, char *r, int size_r)
