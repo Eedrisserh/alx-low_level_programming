@@ -1,78 +1,49 @@
 #include "main.h"
-
 /**
- * rev_string - reverse array
- * @n: integer params
- * Return: 0
- */
-
-void rev_string(char *n)
-{
-	int i = 0;
-	int j = 0;
-	char temp;
-
-	while (*(n + i) != '\0')
-	{
-		i++;
-	}
-	i--;
-
-	for (j = 0; j < i; j++, i--)
-	{
-		temp = *(n + j);
-		*(n + j) = *(n + i);
-		*(n + i) = temp;
-	}
-}
-
-/**
- * infinite_add - add 2 numbers together
- * @n1: text representation of 1st number to add
- * @n2: text representation of 2nd number to add
- * @r: pointer to buffer
- * @size_r: buffer size
- * Return: pointer to calling function
+ * infinte_add - A function that adds two different numbers
+ * @n1: character pointer given by main that represents a number
+ * @n2: character pointer given by main that represents a number
+ * @r: A buffer given by main 
+ * @size_r: the buffer size given by main
  */
 
 char *infinite_add(char *n1, char *n2, char *r, int size_r)
 {
-	int overflow = 0, i = 0, j = 0, digits = 0;
-	int val1 = 0, val2 = 0, temp_tot = 0;
+	int i = 0, j = 0, k = 0;
+	int sum = 0;
+	int tens = 0;
+	int begin = 0;
+	int swap = 0;
 
-	while (*(n1 + i) != '\0')
+	while (n1[i] != 0)/* A */
 		i++;
-	while (*(n2 + j) != '\0')
+	while (n2[j] != 0)
 		j++;
-	i--;
+	i--;/* C */
 	j--;
-	if (j >= size_r || i >= size_r)
+	if (i > size_r || j > size_r)/* D */
 		return (0);
-	while (j >= 0 || i >= 0 || overflow == 1)
+	for ( ; k < size_r; i--, j--, k++)/* E */
 	{
-		if (i < 0)
-			val1 = 0;
-		else
-			val1 = *(n1 + i) - '0';
-		if (j < 0)
-			val2 = 0;
-		else
-			val2 = *(n2 + j) - '0';
-		temp_tot = val1 + val2 + overflow;
-		if (temp_tot >= 10)
-			overflow = 1;
-		else
-			overflow = 0;
-		if (digits >= (size_r - 1))
-			return (0);
-		*(r + digits) = (temp_tot % 10) + '0';
-		digits++;
-		j--;
-		i--;
+		sum = tens;
+		if (i >= 0)/* F */
+			sum += n1[i] - '0';
+		if (j >= 0)
+			sum += n2[j] - '0';
+		if (i < 0 && j < 0 && sum == 0)/* G */
+			break;
+		tens = sum / 10;/* H */
+		r[k] = sum % 10 + '0';
 	}
-	if (digits == size_r)
+	if (i >= 0 || j >= 0 || sum > 0)/* J */
 		return (0);
-	*(r + digits) = '\0';
-	rev_string(r);
+	r[k] = '\0';/* K */
+	k--;
+	for ( ; begin < k; k--, begin++)/* I */
+	{
+		swap = r[k];
+		r[k] = r[begin];
+		r[begin] = swap;
+	}
 	return (r);
 }
