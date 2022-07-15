@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * infinte_add - A function that adds two different numbers
  * @n1: character pointer given by main that represents a number
