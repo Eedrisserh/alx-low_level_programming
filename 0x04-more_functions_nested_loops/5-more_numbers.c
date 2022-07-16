@@ -1,41 +1,25 @@
 #include "main.h"
-void charP(int);
 
 /**
- * more_numbers - print extra numbers
+ * more_numbers - print 10 times the numbers, from 0 to 14 .
+ *
+ * Return: Always nothing
  */
 void more_numbers(void)
 {
-	int count = 0;
+	int times, i;
 
-	while (count < 10)
+	times = 0;
+	while (times <= 9)
 	{
-		int c = 0, cnt = 0;
-
-		while (cnt < 15)
+		for (i = 0; i <= 14; i++)
 		{
-			if (c < 10)
-			{
-				charP(c + 48);
-			}
-			else
-			{
-				charP((c / 10) + 48);
-				charP((c % 10) + 48);
-			}
-			c++;
-			cnt++;
+			if (i > 9)
+				_putchar(i / 10 + '0');
+			_putchar((i % 10) + '0');
 		}
-		count++;
-		_putchar('\n');
-	}
-}
 
-/**
- * charP - print character
- * @c: char value
- */
-void charP(int c)
-{
-	_putchar(c);
+		times++;
+		 _putchar('\n');
+	}
 }
