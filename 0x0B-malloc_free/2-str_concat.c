@@ -9,10 +9,8 @@
 
 char *str_concat(char *s1, char *s2)
 {
-	int len;
+	char *con
 
-	len = strlen(s1);
-	s2 = malloc(sizeof(char) * len);
-	strcat(s2, s1);
+	con = strcat(s2, s1);
 	return (s2);
 }
