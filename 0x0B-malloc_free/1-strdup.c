@@ -3,7 +3,6 @@
 /**
  * _strdup - Function that duplicates a string
  * @str: Source which string will be copied from.
- * @dest: Destination string
  * Return: returns 0
  */
 
