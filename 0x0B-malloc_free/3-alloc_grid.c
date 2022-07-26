@@ -24,3 +24,4 @@ int **alloc_grid(int width, int height)
 		ptr1[i] = ptr2;
 	}
 	return (ptr1);
+}
