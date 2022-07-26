@@ -10,10 +10,7 @@
 
 int main(void)
 {
-	int r = 0;
-
-	unsigned int c = 0;
-
+	int r = 0, c = 0;
 	time_t t;
 
 	srand((unsigned int) time(&t));
@@ -21,10 +18,10 @@ int main(void)
 	{
 		r = rand() % 128;
 		if ((c + r) > 2772)
-		break;
+			break;
 		c = c + r;
 		printf("%c", r);
 	}
-	printf("%d\n", (2772 - c));
+	printf("%c\n", (2772 - c));
 	return (0);
 }
