@@ -1,5 +1,6 @@
 #include "dog.h"
 #include <stdlib.h>
+
 /**
  * init_dog - function that initializes dog
  * @name : name of the dog
