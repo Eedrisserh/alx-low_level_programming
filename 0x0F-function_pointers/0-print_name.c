@@ -8,5 +8,7 @@
 
 void print_name(char *name, void (*f)(char *))
 {
+	if (name == '\n' || f == '\n')
+		return;
 		f(name);
 }
