@@ -5,8 +5,8 @@
  * @head: head of the linked list.
  * Return: no return.
  */
- 
- void free_list(list_t *head)
+
+void free_list(list_t *head)
 {
 	if (head == NULL)
 		return;
